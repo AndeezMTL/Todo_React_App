@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 100%);
+}
+.todo-app {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  box-shadow: 40px 40px 10px #161a2bb0;
+  color: #fa0087;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fa0087;
+  font-size: 34px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 10px 30px 10px 10px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fa0087;
+  border-radius: 10px;
+  font-size: 24px;
+}
+
+.todo-input::placeholder {
+  color: #fa0087;
+}
+
+.todo-input.edit {
+  font-size: 24px;
+  border: 2px solid #5d0cff;
+  margin-right: 5px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  color: #fa0087;
+  background: linear-gradient(90deg, #5d0cff 0%, #9b00fa 100%);
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  font-size: 24px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  font-size: 34px;
+  margin-right: 5px;
+  color: #fa0087;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.delete-icon:hover {
+  font-size: 34px;
+  margin-right: 5px;
+  box-shadow: none;
+  color: #fa0087;
+  transform: scale(1.2);
+}
+
+.delete-icon :active {
+  font-size: 34px;
+  margin-right: 5px;
+  color: #fa0087;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.edit-icon {
+  font-size: 34px;
+  margin-right: 5px;
+  color: #fa0087;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+}
+.edit-icon:hover {
+  font-size: 34px;
+  margin-right: 5px;
+  box-shadow: none;
+  color: #fa0087;
+  transform: scale(1.2);
+}
+
+.edit-icon:active {
+  font-size: 34px;
+  margin-right: 5px;
+  color: #fa0087;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/*
+Code importé de la librairie uiverse.io
+*/
+
+.comic-button {
+  gap: 10px;
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #fa0087;
+  background-color: #5d0cff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0px #9b00fa;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.comic-button:hover {
+  background-color: #9b00fa;
+  color: #fa0087;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 0px #5d0cff;
+}
+
+.comic-button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
